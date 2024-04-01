@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "OwlCM160_MQTT": {
+      "commandName": "Project",
+      "commandLineArgs": "-s COM5 -u ha3 -p ha3",
+      "nativeDebugging": true
+    }
+  }
+}

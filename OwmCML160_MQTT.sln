@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwlCM160_MQTT", "ConsoleApp2\OwlCM160_MQTT.csproj", "{A1351A88-5162-4B5D-8E22-45970F5B99DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1351A88-5162-4B5D-8E22-45970F5B99DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1351A88-5162-4B5D-8E22-45970F5B99DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1351A88-5162-4B5D-8E22-45970F5B99DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1351A88-5162-4B5D-8E22-45970F5B99DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {920A7BB2-967F-49C6-A684-CC8069EAB160}
+	EndGlobalSection
+EndGlobal

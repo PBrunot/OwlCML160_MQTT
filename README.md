@@ -2,7 +2,9 @@
 
 A command-line utility designed to run permanently to publish realtime measurements received by Owl Energy Meter CM160 on serial port to HomeAssistant. This can be used in the Energy dashboard to monitor house-hold consumption.
 
-![image](https://github.com/PBrunot/OwlCML160_MQTT/assets/6236243/e702aef5-1f9c-42b0-85b0-17b1696e8cbf)
+| Device | HA |
+|---|---| 
+| ![image](https://github.com/PBrunot/OwlCML160_MQTT/assets/6236243/f117920f-d593-40c4-bf29-3f8721d3feac) | ![image](https://github.com/PBrunot/OwlCML160_MQTT/assets/6236243/e702aef5-1f9c-42b0-85b0-17b1696e8cbf) |
 
 
 ## Installation

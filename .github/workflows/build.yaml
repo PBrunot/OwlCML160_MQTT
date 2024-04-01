@@ -14,17 +14,15 @@ jobs:
       steps:
         - uses: actions/checkout@v4
         - name: Setup dotnet ${{ matrix.dotnet-version }}
-          uses: actions/setup-dotnet@v3
+          uses: actions/setup-dotnet@v4
           with:
             dotnet-version: ${{ matrix.dotnet-version }}
         - name: Install dependencies
           run: dotnet restore
-        - name: Build
-          run: dotnet build
         - name: Publish
-          run: dotnet publish -c Release -o ${{ github.workspace }}/publish
-        - name: Archive
-          uses: actions/upload-artifact@v2
+          run: dotnet publish -c Release -p:PublishSingleFile=true
+        - name: Archive artifact
+          uses: actions/upload-artifact@v4
           with:
-              name: publish
-              path: ${{ github.workspace }}/publish
+              name: publish Windows x64 single executable file
+              path: ${{ github.workspace }}\ConsoleApp2\publish\net8.0-windows10.0.22621.0\win-x64\publish

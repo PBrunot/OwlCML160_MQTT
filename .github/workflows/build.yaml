@@ -1,0 +1,30 @@
+# YAML Github file to build the .net core 8.0 project
+name: dotnet package
+
+on: [push]
+
+jobs:
+    build:
+  
+      runs-on: windows-latest
+      strategy:
+        matrix:
+          dotnet-version: [ '8.0.x' ]
+  
+      steps:
+        - uses: actions/checkout@v4
+        - name: Setup dotnet ${{ matrix.dotnet-version }}
+          uses: actions/setup-dotnet@v3
+          with:
+            dotnet-version: ${{ matrix.dotnet-version }}
+        - name: Install dependencies
+          run: dotnet restore
+        - name: Build
+          run: dotnet build
+        - name: Publish
+          run: dotnet publish -c Release -o ${{ github.workspace }}/publish
+        - name: Archive
+          uses: actions/upload-artifact@v2
+          with:
+              name: publish
+              path: ${{ github.workspace }}/publish

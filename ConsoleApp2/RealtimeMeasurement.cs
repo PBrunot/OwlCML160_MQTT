@@ -19,7 +19,7 @@ namespace OwlCM160_MQTT
 
         public override string ToString()
         {
-            return $"Current : {Current_A.ToString("0.00")} A, Power : {Power_kW.ToString("0.00")} kW";
+            return $"Current : {Current_A.ToString("0.000")} A, Power : {Power_kW.ToString("0.000")} kW";
         }
     }
 }
